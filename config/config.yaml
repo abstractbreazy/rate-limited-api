@@ -1,0 +1,14 @@
+---
+# HTTP Server configuration.
+server:
+  port: 8000
+  read_timeout: 10s
+  write_timeout: 10s
+limiter:
+  limit: 5
+  timeout: 10s
+  subnet_mask: 24 
+# Redis configuration.
+redis:
+  # Default Redis URL.
+  url: redis://redis:6379
